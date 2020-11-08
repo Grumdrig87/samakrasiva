@@ -1036,6 +1036,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#da4eb9', end
     display: -moz-box;
     display: -ms-flexbox;
     display: flex;
+    position: relative;
+    z-index: 5;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
        -moz-box-pack: justify;
@@ -1160,4 +1162,84 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#da4eb9', end
     -webkit-border-radius: 0 50px 0 50px;
        -moz-border-radius: 0 50px 0 50px;
             border-radius: 0 50px 0 50px;
+}
+
+/* ---look--- */
+
+.look {
+    background: url('../img/look-bg.png') no-repeat 0 0 / cover;
+    padding: 313px 0 238px;
+    margin-top: -110px;
+    position: relative;
+    z-index: 4;
+}
+.look::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 756px;
+    height: 240px;
+    background: url('../img/tkan-up.png') no-repeat 0 0 / cover;
+    top: 175px;
+    left: 824px;
+    z-index: 5;
+}
+.look::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 688px;
+    height: 151px;
+    background: url('../img/tkan-bot.png') no-repeat 0 0 / cover;
+    bottom: 70px;
+    left: 835px;
+}
+
+.look-tit {
+    color: #fff;
+    text-align: left;
+    margin-bottom: 35px;
+}
+.look__wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.look__left{
+    width: 52%;
+}
+.look__left ul li {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #fff;
+    font-size: 22px;
+    line-height: 1.35em;
+}
+.look__img {
+    margin-right: 22px;
+}
+.look__left ul li:not(:last-child) {
+    margin-bottom: 50px;
+}
+.look__left ul {
+    width: 72%;
+}
+.look__right {
+    width: 48%;
+    position: relative;
+}
+.look__right::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 540px;
+    height: 470px;
+    background: url('../img/crown.png') no-repeat 0 0 / cover;
+    top: 0;
+    right: 96px;
 }
