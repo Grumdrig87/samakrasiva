@@ -1248,6 +1248,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#da4eb9', end
 
 .result {
     background: #fff;
+    padding-bottom: 130px;
 }
 .result__wrap {
     padding: 15px;
@@ -1453,4 +1454,307 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#da4eb9', end
 .slick-dots li.slick-active button:before {
     opacity: 1 !important;
     background: #993d9c;
+}
+
+/* ---price--- */
+
+.price {
+    position: relative;
+    padding: 75px 0 80px;
+}
+.price::before {
+    position: absolute;
+    content: '';
+    top: -130px;
+    left: 0;
+    display: block;
+    width: 1920px;
+    height: 132px;
+    background: url('../img/price-clouds.png') no-repeat 0 0 / cover;
+}
+.price__help {
+    position: relative;
+}
+.price__help::before {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 385px;
+    height: 982px;
+    top: 855px;
+    left: -130px;
+    background: url('../img/lep-l.png') no-repeat 0 0 / cover;
+    -webkit-animation-name: lep1;
+       -moz-animation-name: lep1;
+         -o-animation-name: lep1;
+            animation-name: lep1;
+    -webkit-animation-duration: 5s;
+       -moz-animation-duration: 5s;
+         -o-animation-duration: 5s;
+            animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+       -moz-animation-iteration-count: infinite;
+         -o-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+}
+.price__help::after {
+    position: absolute;
+    content: '';
+    display: block;
+    top: 255px;
+    right: -200px;
+    width: 383px;
+    height: 1417px;
+    background: url('../img/lep-r.png') no-repeat 0 0 / cover;
+    -webkit-animation-name: lep1;
+       -moz-animation-name: lep1;
+         -o-animation-name: lep1;
+            animation-name: lep1;
+    -webkit-animation-duration: 5s;
+       -moz-animation-duration: 5s;
+         -o-animation-duration: 5s;
+            animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+       -moz-animation-iteration-count: infinite;
+         -o-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+}
+
+
+@-webkit-keyframes lep1 {
+    0% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+    50% {
+        -webkit-transform: translateY(30px);
+                transform: translateY(30px);
+    }
+    to {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+}
+
+
+@-moz-keyframes lep1 {
+    0% {
+        -moz-transform: translateY(0);
+             transform: translateY(0);
+    }
+    50% {
+        -moz-transform: translateY(30px);
+             transform: translateY(30px);
+    }
+    to {
+        -moz-transform: translateY(0);
+             transform: translateY(0);
+    }
+}
+
+
+@-o-keyframes lep1 {
+    0% {
+        -o-transform: translateY(0);
+           transform: translateY(0);
+    }
+    50% {
+        -o-transform: translateY(30px);
+           transform: translateY(30px);
+    }
+    to {
+        -o-transform: translateY(0);
+           transform: translateY(0);
+    }
+}
+
+
+@keyframes lep1 {
+    0% {
+        -webkit-transform: translateY(0);
+           -moz-transform: translateY(0);
+             -o-transform: translateY(0);
+                transform: translateY(0);
+    }
+    50% {
+        -webkit-transform: translateY(30px);
+           -moz-transform: translateY(30px);
+             -o-transform: translateY(30px);
+                transform: translateY(30px);
+    }
+    to {
+        -webkit-transform: translateY(0);
+           -moz-transform: translateY(0);
+             -o-transform: translateY(0);
+                transform: translateY(0);
+    }
+}
+
+.price__wrap {
+    width: 70%;
+    margin: 0 auto;
+}
+.price__card {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+       -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: relative;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+       -moz-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;    
+}
+.price__card:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 55px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 67px;
+    height: 1px;
+    background: #e8d9e9;
+}
+
+.price__img {
+    width: 42%;
+    position: relative;
+}
+.price__img img {
+    display: block;
+    -webkit-border-radius: 0 20px 20px 20px;
+    -moz-border-radius: 0 20px 20px 20px;
+         border-radius: 0 20px 20px 20px;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+.price__lab {
+    position: absolute;
+    display: block;
+    -webkit-border-radius: 20px;
+       -moz-border-radius: 20px;
+            border-radius: 20px;
+    color: #fff;
+    padding: 14px 33px 24px 47px;
+    font-weight: 600;
+    font-size: 30px;
+    bottom: -35px;
+    right: 0;
+    background: rgba(197,147,199,1);
+    background: -moz-linear-gradient(left, rgba(197,147,199,1) 0%, rgba(153,61,156,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(197,147,199,1)), color-stop(100%, rgba(153,61,156,1)));
+    background: -webkit-linear-gradient(left, rgba(197,147,199,1) 0%, rgba(153,61,156,1) 100%);
+    background: -o-linear-gradient(left, rgba(197,147,199,1) 0%, rgba(153,61,156,1) 100%);
+    background: -webkit-gradient(linear, left top, right top, from(rgba(197,147,199,1)), to(rgba(153,61,156,1)));
+    background: linear-gradient(to right, rgba(197,147,199,1) 0%, rgba(153,61,156,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c593c7', endColorstr='#993d9c', GradientType=1 );
+}
+.price__lab span {
+    font-size: 22px;
+}
+.price__lab:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 47px;
+    height: 47px;
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+            border-radius: 50%;
+    background: #ec607b url('../img/cross.png') no-repeat center center;
+    top: 0;
+    bottom: 0;
+    left: -23px;
+    margin: auto 0;
+    -webkit-box-shadow: 2px 6px 8px rgba(255,88,73,0.25);
+       -moz-box-shadow: 2px 6px 8px rgba(255,88,73,0.25);
+            box-shadow: 2px 6px 8px rgba(255,88,73,0.25);
+
+}
+.price__list {
+    width: 42%;
+}
+.price__card:nth-child(2) .price__lab {
+    right: unset;
+    left: 0;
+}
+.price__card:not(:last-child) {
+    margin-bottom: 105px;
+}
+.price .title-l {
+    margin-bottom: 65px;
+}
+.price__card:nth-child(3) .price__lab {
+    font-weight: 700;
+    color: #742a74;
+}
+.price__card:nth-child(3) .price__lab:after {
+    -webkit-box-shadow: 2px 6px 8px rgba(0,170,36,0.25);
+       -moz-box-shadow: 2px 6px 8px rgba(0,170,36,0.25);
+            box-shadow: 2px 6px 8px rgba(0,170,36,0.25);
+    background: #18c23d url('../img/ok.png') no-repeat center center;
+}
+.price__title {
+    font-family: 'Berlingske Serif SemBd';
+    color: #000;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.price__list ul {
+    padding-left: 10px;
+}
+.price__list ul li {
+    padding-left: 30px;
+    position: relative;
+    color: #000;
+    font-size: 20px;
+}
+.price__list ul li::before {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    left: 0;
+    top: 5px;
+    background: url('../img/Minus.png') no-repeat 0 0 / cover;
+}
+.price__card:nth-child(3) .price__list ul li::before {
+    width: 18px;
+    height: 18px;
+    background: url('../img/list-ok.png') no-repeat 0 0 / cover;
+}
+.price__list ul li:not(:last-child) {
+    margin-bottom: 20px;
+}
+.price__list ul:not(:last-child) {
+    margin-bottom: 30px;
+}
+.price__card .btn__top {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+.price__card .btn__help {
+    font-size: 9px;
+    padding: 20px 30px 20px 72px;
+}
+.price__card .btn::before {
+    width: 35px;
+    height: 35px;
+}
+.price__card .btn__help::after {
+    width: 273px;
+    height: 54px;
 }
