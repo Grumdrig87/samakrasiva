@@ -734,6 +734,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#da4eb9', end
             border-radius: 50%;
     overflow: hidden;
     height: 100%;
+    width: 100%;
 }
 .prog__card-img-shad:before,
 .prog__card-img-shad:after {
@@ -1460,7 +1461,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#da4eb9', end
 
 .price {
     position: relative;
-    padding: 75px 0 80px;
+    padding: 75px 0 145px;
 }
 .price::before {
     position: absolute;
@@ -1481,7 +1482,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#da4eb9', end
     display: block;
     width: 385px;
     height: 982px;
-    top: 855px;
+    top: 744px;
     left: -130px;
     background: url('../img/lep-l.png') no-repeat 0 0 / cover;
     -webkit-animation-name: lep1;
@@ -1757,4 +1758,219 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#da4eb9', end
 .price__card .btn__help::after {
     width: 273px;
     height: 54px;
+}
+
+/* ---rev--- */
+.rev {
+    background: #fff;
+    position: relative;
+    padding-bottom: 30px;
+}
+.rev::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -130px;
+    left: 0;
+    width: 100%;
+    height: 132px;
+    background: url('../img/clouds.png') no-repeat 0 0 / cover;
+}
+.rev .title-l {
+    margin-bottom: 34px;
+}
+.rev__wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    margin: -28px -20px;
+}
+.rev__card-wrap {
+    width: 50%;
+    padding: 28px 20px;
+}
+.rev__img {
+    -webkit-border-radius: 20px;
+       -moz-border-radius: 20px;
+            border-radius: 20px;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    background: rgba(116,42,116,1);
+    background: -moz-linear-gradient(-45deg, rgba(116,42,116,1) 0%, rgba(153,61,156,1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(116,42,116,1)), color-stop(100%, rgba(153,61,156,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(116,42,116,1) 0%, rgba(153,61,156,1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(116,42,116,1) 0%, rgba(153,61,156,1) 100%);
+    background: -webkit-linear-gradient(315deg, rgba(116,42,116,1) 0%, rgba(153,61,156,1) 100%);
+    background: -moz-linear-gradient(315deg, rgba(116,42,116,1) 0%, rgba(153,61,156,1) 100%);
+    background: -o-linear-gradient(315deg, rgba(116,42,116,1) 0%, rgba(153,61,156,1) 100%);
+    background: linear-gradient(135deg, rgba(116,42,116,1) 0%, rgba(153,61,156,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#742a74', endColorstr='#993d9c', GradientType=1 );
+}
+.rev__img:after,
+.rev__img::before {
+    position: absolute;
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+            border-radius: 50%;
+    content: '';
+    display: block;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+.rev__img:after {
+    -webkit-transition: all 3s linear;
+    -o-transition: all 3s linear;
+    -moz-transition: all 3s linear;
+    transition: all 3s linear;
+    width: 75px;
+    height: 75px;
+    background: #fff url('../img/playsec.png') no-repeat 55% center;
+}
+.rev__img:hover:after {
+    -webkit-transform: rotateZ(360deg);
+       -moz-transform: rotateZ(360deg);
+        -ms-transform: rotate(360deg);
+         -o-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+}
+.rev__img::before {
+    width: 95px;
+    height: 95px;
+    background: rgba(255,255,255,0.2);
+}
+.rev__img img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    opacity: 0.45;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+.rev__top {
+    position: relative;
+    margin-bottom: 80px;
+}
+.rev__pep {
+    position: absolute;
+    left: 19px;
+    bottom: -55px;
+    -webkit-border-radius: 20px;
+       -moz-border-radius: 20px;
+            border-radius: 20px;
+    background: #fafafc;
+    padding: 7px 37px 10px 11px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.rev__info {
+    position: relative;
+    padding-left: 115px;
+}
+.rev__info::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 19px;
+    top: 4px;
+    width: 72px;
+    height: 61px;
+    background: url('../img/quote.png') no-repeat 0 0 / cover;
+}
+.rev__info p {
+    font-size: 18px;
+    color: #742a74;
+}
+
+/* ---who--- */
+
+.who {
+    padding: 261px 0 100px;
+    position: relative;
+    background: #ffffff;
+}
+.who::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -139px;
+    right: 0;
+    width: 1920px;
+    height: 1441px;
+    background: url('../img/who-bg.png') no-repeat 0 0 / cover;
+}
+.who .title-l {
+    margin-bottom: 25px;
+}
+.who__help {
+    position: relative;
+}
+.who__help::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -435px;
+    left: -389px;
+    width: 1280px;
+    height: 500px;
+    z-index: 4;
+    background: url('../img/gem-t.png') no-repeat 0 0 / cover;
+}
+.who__help::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -215px;
+    left: -66px;
+    width: 1406px;
+    height: 290px;
+    z-index: 4;
+    background: url('../img/gem-b.png') no-repeat 0 0 / cover;
+}
+.who__wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    z-index: 5;
+    margin: -14px -30px;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+}
+.who__card-wrap {
+    width: 33%;
+    padding: 14px 30px;
+}
+.who__card-wrap:nth-child(3) img {
+    margin-right: 40px;
+}
+.who__card-wrap:nth-child(4) img {
+    margin-right: -22px;
+    margin-bottom: 22px;
+}
+.who__card p {
+    text-align: center;
+    font-size: 17px;
 }
