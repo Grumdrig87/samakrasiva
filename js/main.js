@@ -10,13 +10,19 @@ jQuery(document).ready(function($){
 			responsive: [{
 				breakpoint: 993,
 				settings: {
-					slidesToShow: 1,
-					centerMode: true
+					slidesToShow: 1
 				}
 			}]
 		});
 	}
-    
+  $(document).ready(function(){
+    $('[data-nav]').on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+});
     
     // // faq
     // $('[data-faq]').click(function(){
@@ -26,28 +32,34 @@ jQuery(document).ready(function($){
     // })
       // adaptive
 
-    //   if ($(window).width() < 993) {
-    //     // burger
-    //     $('[data-burger]').click(function(){
-    //       $('body').toggleClass("open");
-    //       $(this).toggleClass("open");
-    //       $('[data-nav]').toggleClass("open");
-    //     });
-    //     //header menu 
-          
-    //     function closeMenu () {
-    //       $(document).mouseup(function (e){ // событие клика по веб-документу
-    //         var div = $("[data-nav]"); // тут указываем ID элемента
-    //         if (!div.is(e.target) // если клик был не по нашему блоку
-    //           && div.has(e.target).length === 0 && !$('[data-burger]').is(e.target)) { // и не по его дочерним элементам
-    //           div.removeClass('open');
-    //           $('[data-burger]').removeClass("open");
-    //           $('body').removeClass('open');
-    //         }
-    //       });
-    //     }
-
-    //     closeMenu();
-        
-    // }
+      if ($(window).width() < 993) {
+        var $slidersec = $('[data-prog]');
+        if($slidersec.length>0){
+          $slidersec.slick({
+            dots: true,
+            speed: 300,
+            slidesToShow: 2,
+            responsive: [{
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 1
+              }
+            }]
+          });
+        }
+        var $sliderwho = $('[data-who]');
+        if($sliderwho.length>0){
+          $sliderwho.slick({
+            dots: true,
+            speed: 300,
+            slidesToShow: 2,
+            responsive: [{
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 1
+              }
+            }]
+          });
+        }
+      }
 })

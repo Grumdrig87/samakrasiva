@@ -546,6 +546,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#da4eb9', end
 .main__wrap {
     width: 56%;
     min-width: 639px;
+    position: relative;
+    z-index: 5;
 }
 .main .title {
     margin-bottom: 26px;
@@ -801,7 +803,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#da4eb9', end
 .prog__card-wrap:nth-child(4) .prog__card {
     background: url('../img/what4-bg.png') no-repeat 0 0 / cover;
 }
-
+.prog__video-text {
+    position: relative;
+    z-index: 5;
+}
 .prog__video {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1213,6 +1218,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#da4eb9', end
 }
 .look__left{
     width: 52%;
+    position: relative;
+    z-index: 5;
 }
 .look__left ul li {
     display: -webkit-box;
@@ -1470,6 +1477,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#da4eb9', end
 }
 .slick-dots {
     bottom: -82px !important;
+    z-index: 5;
 }
 
 /* ---price--- */
@@ -1612,6 +1620,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#da4eb9', end
 }
 .price__card {
     width: 90%;
+    z-index: 5;
     margin-left: auto;
     display: -webkit-box;
     display: -webkit-flex;
@@ -2110,7 +2119,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#da4eb9', end
     bottom: -67px;
     right: 4px;
     z-index: 1;
-    background: url('../img/author-w.png');
+    background: url('../img/author-w.png') no-repeat 0 0 / cover;
 }
 
 .author__card {
