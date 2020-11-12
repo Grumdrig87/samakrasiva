@@ -2263,3 +2263,176 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#da4eb9', end
 .footer__f {
     background: rgba(116,42,116,0.2);
 }
+
+
+
+/* -------------------LK PAGE------------- */
+
+.header__page {
+    background: url('../img/header-bg.jpg') no-repeat center center / cover;
+}
+.prog__page {
+    padding: 40px 0 50px;
+}
+.prog__page .title-l {
+    margin-bottom: 5px;
+}
+.prog__page-tit-sm {
+    font-size: 27px;
+    text-align: center;
+    color: #000;
+    margin-bottom: 35px;
+}
+
+.prog__page-wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-border-radius: 20px;
+       -moz-border-radius: 20px;
+            border-radius: 20px;
+    background: #fafafc;
+    overflow: hidden;
+    margin-bottom: 37px;
+    -webkit-box-shadow: inset 10px 10px 18px rgba(236,96,123,0.07), 5px 0 16px rgba(90,37,93,0.05);
+       -moz-box-shadow: inset 10px 10px 18px rgba(236,96,123,0.07), 5px 0 16px rgba(90,37,93,0.05);
+            box-shadow: inset 10px 10px 18px rgba(236,96,123,0.07), 5px 0 16px rgba(90,37,93,0.05);
+}
+.prog__item-wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 13px 0;
+    cursor: pointer;
+    position: relative;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 auto;
+       -moz-box-flex: 1;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
+}
+.prog__item-wrap.active,
+.prog__item-wrap:hover {
+    color: #742a74;
+    background: #f8dcf9;
+}
+.prog__item-wrap.active svg,
+.prog__item-wrap:hover svg,
+.prog__item-wrap:hover svg > g {
+    fill: #742a74;
+}
+.prog__item-wrap:not(:last-child)::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto 0;
+    width: 2px;
+    height: 69px;
+    background: #cb9fcc;
+}
+.prog__item-name span {
+    display: block;
+    font-family: 'Berlingske Serif SemBd';
+    font-size: 24px;
+}
+.prog__item-name {
+    font-size: 16px;
+}
+.prog__item-img {
+    margin-right: 11px;
+}
+.prog__content {
+    display: none;
+}
+.prog__content.active {
+    display: block;
+}
+.prog__lessons {
+    margin: -10px -20px 55px;
+}
+.prog__less-wrap {
+    padding: 10px 20px;
+}
+.prog_less {
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+    background: #fafafc;
+    border: 1px solid #e8d9e9;
+    padding: 30px 22px 13px 17px;
+    font-weight: 500;
+    font-size: 16px;
+    height: 100%;
+    position: relative;
+    color: #997e9a;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+    -webkit-box-shadow: inset 10px 10px 18px rgba(236,96,123,0.07), 5px 0 16px rgba(90,37,93,0.05);
+       -moz-box-shadow: inset 10px 10px 18px rgba(236,96,123,0.07), 5px 0 16px rgba(90,37,93,0.05);
+            box-shadow: inset 10px 10px 18px rgba(236,96,123,0.07), 5px 0 16px rgba(90,37,93,0.05);
+}
+.prog_less span {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.prog__page .slick-list,
+.prog__page .slick-track {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -moz-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+.prog__page .slick-slide > div,
+.prog__page .slick-slide .prog__less-wrap {
+  height: 100%;
+}
+.prog__lessons .slick-current .prog_less {
+    border-width: 2px;
+    padding: 29px 21px 12px 16px;
+    -webkit-box-shadow: none;
+       -moz-box-shadow: none;
+            box-shadow: none;
+}
+.prog__lessons .slick-current .prog_less::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -7px;
+    left: 0;
+    margin: 0 auto;
+    width: 14px;
+    height: 14px;
+    background: #702a72;
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+            border-radius: 50%;
+}
+.prog__card-video .slick-slide {
+    width: 750px !important;
+}
+.container-l {
+    width: 1560px;
+    margin: 0 auto;
+}
