@@ -219,6 +219,16 @@
 .footer {
   background: url(../img/main-bg.jpg) no-repeat center 0 / cover;
 }
+.footer__bot p {
+  width: 100%;
+}
+.footer__bot-wrap {
+  width: 100%;
+}
+.footer__bot,
+.footer__bot a {
+  font-size: 12px;
+}
 }
 
 /* 577-768px */
@@ -338,8 +348,10 @@
   font-size: 17px;
 }
 .btn {
+  max-width: 327px;
+  display: block;
+  margin: 0 auto !important;
   font-size: 10px;
-  margin-right: 0 !important;
 }
 .btn::before {
   width: 55px;
@@ -369,11 +381,8 @@
 .footer__bot a {
   font-size: 11px;
 }
-.footer__bot p {
-  width: 100%;
-}
+
 .footer__bot-wrap {
-  width: 100%;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
      -moz-box-pack: center;
@@ -401,7 +410,8 @@
     font-size: 22px !important;
   }
   .title-l {
-    font-size: 26px;
+    font-size: 24px;
+    margin-bottom: 25px !important;
   }
   .title__prev {
     font-size: 15px;
@@ -428,6 +438,7 @@
 .header__lk {
   width: 45%;
   font-size: 8px;
+  max-width: 130px;
 }
 .header__lk img {
   margin-right: 3px;
@@ -476,7 +487,7 @@
 .prog__video-text p {
   padding-left: 0;
   font-size: 14px;
-  margin-top: 25px;
+  margin-top: 35px;
 }
 .prog__video:after {
   top: 118px;
@@ -509,7 +520,7 @@
 }
 .prog__video-tit:after {
   width: 69px;
-  height: 183px;
+  height: 159px;
   -webkit-transform: rotateZ(7deg);
      -moz-transform: rotateZ(7deg);
       -ms-transform: rotate(7deg);
@@ -557,5 +568,180 @@
   background: #fff url(../img/look-bg.png) no-repeat 54% 0 / cover;
   padding: 323px 0 355px;
   margin-top: -293px;
+}
+.result {
+  padding: 0;
+}
+.result__foto > div:after {
+  bottom: -13px;
+  padding: 3px 5px;
+  font-size: 12px;
+}
+.result__card {
+  padding: 15px;
+}
+.result__bot-foto {
+    margin-right: 10px;
+    width: 45px;
+    height: 45px;
+}
+.price::before {
+  width: 100%;
+  top: -32px;
+  height: 20px;
+}
+.result__name span {
+  font-size: 11px;
+}
+.result__name {
+  font-size: 13px;
+}
+.result__wrap .slick-slide:nth-child(2n) .result__card {
+  background: #fff url(../img/rev2-bg.png) no-repeat 100% 110% / 34%;
+}
+.result__wrap .slick-slide:nth-child(2n-1) .result__card {
+  background: #fff url(../img/rev1-bg.png) no-repeat 95% 100% / 37%;
+}
+.result .slick-dots {
+  bottom: -31px !important;
+}
+.price__lab span {
+  font-size: 14px;
+}
+.price__lab {
+  padding: 12px 33px;
+  font-size: 18px;
+}
+.price__lab:after {
+  width: 28px;
+  height: 28px;
+  -webkit-background-size: 12px 12px;
+     -moz-background-size: 12px;
+          background-size: 12px;
+  left: -12px;
+}
+.price__title{
+  font-size: 24px;
+}
+.price__img, .price__list {
+  width: 90% !important;
+}
+.price__list {
+  padding: 36px 0 0 0;
+}
+.price__list ul li {
+  font-size: 16px;
+}
+.price__card:not(:last-child) {
+  margin-bottom: 25px;
+}
+.rev__pep {
+  left: 9px;
+  bottom: -32px;
+  min-width: 186px;
+  padding: 6px 37px 7px 11px;
+}
+.rev__info p {
+  font-size: 10px;
+}
+.rev__info::before {
+  left: 15px;
+  width: 39px;
+  height: 33px;
+}
+.rev__info {
+  padding-left: 66px;
+}
+.rev__top {
+  margin-bottom: 50px;
+}
+.rev__card-wrap {
+  padding: 12px 20px;
+}
+.rev__wrap {
+  margin: -12px -20px;
+}
+.rev__img::before {
+  width: 50px;
+  height: 50px;
+}
+.rev__img:after {
+  width: 50px;
+  height: 50px;
+  -webkit-background-size: 30% 30%;
+     -moz-background-size: 30%;
+          background-size: 30%;
+}
+.who::before {
+  top: -71px;
+  width: 672px;
+  height: 796px;
+}
+.who {
+  padding: 196px 0 70px;
+}
+.who__help::before {
+  top: -256px;
+  left: unset;
+  right: -30px;
+  width: 577px;
+  height: 215px;
+}
+.who__help::after {
+  display: none;
+}
+.who .slick-dots {
+  bottom: -35px !important;
+}
+.author {
+  padding: 15px 0 67px;
+}
+.author__text {
+  padding: 16px;
+}
+.author__left p:not(:last-child) {
+  margin-bottom: 18px;
+}
+.author__left p {
+  font-size: 15px;
+}
+.author__right::after {
+  width: 325px;
+  height: 494px;
+  right: -68px;
+}
+.author__right {
+  padding-top: 432px;
+}
+.author__card span {
+  margin-bottom: 7px;
+  font-size: 18px;
+}
+.author__card {
+    bottom: -30px;
+    width: 177px;
+    height: 175px;
+    font-size: 12px;
+    padding: 40px 16px 36px 37px;
+}
+.footer {
+  padding-top: 20px;
+}
+.footer .title {
+  margin-bottom: 15px;
+}
+.footer .title::before {
+  width: 180px;
+  height: 136px;
+  top: 140px;
+  left: -42px;
+}
+
+.footer .title:after {
+  width: 140px;
+  height: 146px;
+  top: 140px;
+  right: -26px;
+  background: url(../img/foot-r.png) no-repeat 100% 100% / cover;
 }
 }
