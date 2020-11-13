@@ -362,6 +362,8 @@ a:focus {
 
 .header{
     padding: 19px 0;
+    z-index: 4;
+    position: relative;
 }
 .header__wrap {
     display: -webkit-box;
@@ -2565,7 +2567,32 @@ a:focus {
     padding: 184px 0 77px;
     margin-top: -106px;
     min-height: 100vh;
+    position: relative;
     background: url('../img/pay-bg.png') no-repeat 0 0 / cover;
+}
+.payment::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    width: 960px;
+    height: 710px;
+    background: url('../img/pay-l.png') no-repeat 0 0 / cover;
+
+}
+.payment::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    width: 1006px;
+    height: 530px;
+    background: url('../img/pay-r.png') no-repeat 0 0 / cover;
+
 }
 .header__pay-b {
     background: rgba(245,247,249,1);
@@ -2592,11 +2619,37 @@ a:focus {
 .payment-title {
     text-align: center;
     margin-bottom: 25px;
+    font-size: 84px;
+    position: relative;
+}
+.payment-title::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 25px;
+    left: 32px;
+    width: 160px;
+    height: 93px;
+    z-index: 1;
+    background: url('../img/pay-tit-l.png') no-repeat 0 0 / cover;
+}
+.payment-title::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -34px;
+    right: -98px;
+    width: 226px;
+    height: 236px;
+    z-index: 1;
+    background: url('../img/pay-tit-r.png') no-repeat 0 0 / cover;
 }
 .payment-titsm {
     width: 80%;
-    margin: 0 auto 40px;
+    margin: 0 auto 34px;
     font-weight: 600;
+    position: relative;
+    z-index: 5;
     font-size: 28px;
     line-height: 1.5em;
     background: -webkit-gradient(linear, left top, right top, from(#b95dbc), to(#742a74));
@@ -2610,13 +2663,17 @@ a:focus {
     color: #742a74;
     text-align: center;
 }
+.payment-titsm span {
+    font-size: 35px;
+    font-family: 'Berlingske Serif SemBd';
+}
 .payment__type {
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 0 -4px;
+    margin: -13px -4px;
     margin-bottom: 65px;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
@@ -2629,7 +2686,7 @@ a:focus {
 }
 .payment__type p {
     width: 20%;
-    padding: 0 4px;
+    padding: 13px 4px;
 
 }
 .payment__type p label {
@@ -2659,7 +2716,7 @@ a:focus {
        -moz-border-radius: 15px;     
             border-radius: 15px;
     border: 2px solid #fff;
-    height: 160px;
+    height: 144px;
     cursor: pointer;
 }
 
@@ -2690,8 +2747,7 @@ a:focus {
     position: absolute;
     left: 10px;
     top: 10px;
-    background: #ec607b;
-    opacity: 0;
+    background: #dfdfdf;
     -webkit-border-radius: 50%;
        -moz-border-radius: 50%;
             border-radius: 50%;
@@ -2705,7 +2761,7 @@ a:focus {
 }
 
 .radio-pay:checked + label .label__help::after {
-    opacity: 1;
+    background: #ec607b;
 }
 
 .payment__sub {
@@ -2716,14 +2772,13 @@ a:focus {
     display: flex;
     position: relative;
     z-index: 1;
-    margin-bottom: 42px;
+    margin-bottom: 38px;
    -webkit-box-pack: center;
    -webkit-justify-content: center;
       -moz-box-pack: center;
        -ms-flex-pack: center;
            justify-content: center;
 }
-
 .payment__email {
     width: 100%;
     height: 100%;
@@ -2760,6 +2815,10 @@ a:focus {
     
     .payment__email::placeholder {
     color: #858585;
+    }
+    .payment__form {
+        position: relative;
+        z-index: 3;
     }
 
 .payment__sub > span {
@@ -2819,9 +2878,11 @@ a:focus {
 .payment__pers {
     text-align: center;
     margin: 0 auto;
-    width: 80%;
+    width: 74%;
     font-size: 22px;
     line-height: 1.45em;
+    position: relative;
+    z-index: 3;
 }
 .payment__pers a {
     text-decoration: underline;

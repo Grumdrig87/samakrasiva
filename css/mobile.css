@@ -65,6 +65,16 @@
 .prog__wrap {
   margin-bottom: 153px !important;
 }
+.payment::before,
+.payment::after {
+  display: none;
+}
+.payment-title::before {
+  left: -37px;
+}
+.payment-title::after {
+  right: -147px;
+}
 }
  
 /* 769-992px */
@@ -280,6 +290,53 @@
 .footer__page {
   background: #fff;
 }
+.header__pay {
+  font-size: 13px;
+}
+.payment-title {
+  font-size: 70px;
+}
+.payment-titsm {
+  width: 100%;
+}
+.payment__type {
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.payment__type p {
+  width: 50%;
+  padding: 13px 30px;
+}
+.payment__sub {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.payment__sub > span {
+  width: 442px;
+  margin: 0 auto 20px;
+}
+.payment__email {
+  padding: 37px 0px 43px 115px;
+}
+.payment__sub .btn {
+  width: 442px;
+  margin: 0 auto;
+}
+.payment__pers {
+  width: 100%;
+}
+.payment-title::before {
+  left: -96px;
+}
+.payment-title::after {
+  right: -200px;
+}
 }
 
 /* 577-768px */
@@ -469,6 +526,23 @@
 }
 .prog__card-video .slick-next {
   right: -30px !important;
+}
+.payment__type p {
+    padding: 13px;
+}
+.header__pay:last-child {
+  display: none;
+}
+.payment__sub > span {
+  max-width: 327px;
+}
+.payment__email {
+  padding: 35px 0px 35px 83px;
+  font-size: 22px;
+}
+.email__label {
+  left: 27px;
+  top: 29px;
 }
 }
 
@@ -934,4 +1008,80 @@
   width: 2454px;
   height: 829px;
 }
+.header__pay {
+  font-size: 11px;
+}
+.payment {
+  padding: 125px 0 15px;
+  margin-top: -111px;
+}
+.payment-title {
+  font-size: 38px !important;
+  margin:0 auto 10px;
+  line-height: 1.1em !important;
+  width: 90%;
+}
+.payment-titsm {
+  font-size: 13px;
+  margin-bottom: 25px;
+}
+.payment-titsm span {
+  font-size: 17px;
+}
+.payment__type p {
+  width: 100%;
+}
+
+.payment__type {
+  width: 80%;
+  margin: 0 auto 10px;
+}
+.payment__sub > span {
+  width: 100%;
+}
+.payment__email {
+  padding: 27px 0px 27px 77px;
+  font-size: 20px;
+}
+.email__label {
+  width: 27px;
+  height: 27px;
+  left: 27px;
+  top: 26px;
+}
+.email__label svg {
+  width: 14px;
+  height: 14px;
+}
+.payment__sub .btn {
+  width: 100%;
+  max-width: unset;
+  max-width: 327px;
+}
+.payment__sub {
+  margin-bottom: 25px;
+}
+.payment__pers {
+  font-size: 13px;
+}
+.payment__sub .btn__help {
+  text-align: center;
+
+}
+.payment-title::before {
+    width: 83px;
+    height: 50px;
+    left: -29px;
+    -webkit-transform: rotateZ(25deg);
+       -moz-transform: rotateZ(25deg);
+        -ms-transform: rotate(25deg);
+         -o-transform: rotateZ(25deg);
+            transform: rotateZ(25deg);
+}
+.payment-title::after {
+  width: 117px;
+  height: 122px;
+  right: -88px;
+}
+
 }
